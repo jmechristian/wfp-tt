@@ -30,6 +30,10 @@
   display: inline-flex;
 }
 
+svg {
+  display: inline;
+}
+
 .full-star {
   color: $highlight;
   width: 30px;
