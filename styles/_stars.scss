@@ -27,13 +27,12 @@
 }
 
 .stars {
-  width: 50%;
   display: inline-flex;
 }
 
 .full-star {
   color: $highlight;
-  width: 100%;
+  width: 40px;
   height: auto;
 }
 
