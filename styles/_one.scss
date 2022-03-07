@@ -1,0 +1,41 @@
+.one__wrapper {
+  display: grid;
+}
+
+.one__container {
+  padding: 2rem 0.8rem;
+}
+
+.one__content {
+  font-size: 1.8rem;
+  color: $grey;
+
+  span {
+    font-family: $bold;
+    font-size: 1.8rem;
+  }
+}
+
+.one__author {
+  font-size: 1.4rem;
+  color: $highlight;
+  text-transform: uppercase;
+  font-family: $bold;
+  text-align: right;
+  margin-top: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .one__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .one__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+  }
+}

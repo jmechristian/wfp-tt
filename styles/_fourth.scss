@@ -1,0 +1,69 @@
+.four__wrapper {
+  display: grid;
+}
+
+.four__container {
+  margin-bottom: 3rem;
+}
+
+.four__inner {
+  padding: 3rem;
+  border: 1px solid $light-grey;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.four__content {
+  font-size: 2.2rem;
+  font-family: $main;
+  color: $primary;
+
+  span {
+    font-family: $italic;
+    color: $highlight;
+    font-size: 2.2rem;
+    letter-spacing: 0.3px;
+    font-style: italic;
+  }
+}
+
+.author__block {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.author {
+  font-family: $main;
+  font-size: 2.2rem;
+  color: $primary;
+}
+
+.ruler {
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid $light-grey;
+}
+
+.location {
+  font-family: $bold;
+  color: $highlight;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 700px) {
+  .four__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .four__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}

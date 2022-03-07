@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Chiswick Italic';
+  src: url('/fonts/ChiswickHeadline-LightItalic.eot');
+  src: url('/fonts/ChiswickHeadline-LightItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/ChiswickHeadline-LightItalic.woff2') format('woff2'),
+    url('/fonts/ChiswickHeadline-LightItalic.woff') format('woff'),
+    url('/fonts/ChiswickHeadline-LightItalic.svg#ChiswickHeadline-LightItalic')
+      format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chiswick';
+  src: url('/fonts/ChiswickHeadline-Light.eot');
+  src: url('/fonts/ChiswickHeadline-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/ChiswickHeadline-Light.woff2') format('woff2'),
+    url('/fonts/ChiswickHeadline-Light.woff') format('woff'),
+    url('/fonts/ChiswickHeadline-Light.svg#ChiswickHeadline-Light')
+      format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('/fonts/Gotham-Book.eot');
+  src: url('/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Gotham-Book.woff2') format('woff2'),
+    url('/fonts/Gotham-Book.woff') format('woff'),
+    url('/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url('/fonts/Gotham-Bold.eot');
+  src: url('/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Gotham-Bold.woff2') format('woff2'),
+    url('/fonts/Gotham-Bold.woff') format('woff'),
+    url('/fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url('/fonts/Gotham-Medium.eot');
+  src: url('/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Gotham-Medium.woff2') format('woff2'),
+    url('/fonts/Gotham-Medium.woff') format('woff'),
+    url('/fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import '/styles/variables';
+@import '/styles/navigation';
+
+@import '/styles/one';
+@import '/styles/two';
+@import '/styles/third';
+@import '/styles/fourth';
+@import '/styles/stars';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-family: $body;
+}
+
+.main__wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.main__container {
+  padding: 0 24px;
+}
+
+@media screen and (min-width: 1400px) {
+  .main__container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

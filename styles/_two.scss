@@ -1,0 +1,46 @@
+.two__wrapper {
+  display: grid;
+}
+
+.two__container {
+  padding: 2rem 0.8rem;
+}
+
+.two__content {
+  font-size: 2.2rem;
+  font-family: $main;
+  color: $primary;
+
+  span {
+    font-family: $italic;
+    color: $highlight;
+    font-size: 2.2rem;
+    letter-spacing: 0.3px;
+    font-style: italic;
+  }
+}
+
+.two__author {
+  font-size: 1.4rem;
+  color: $primary;
+  text-transform: uppercase;
+  font-family: $bold;
+  text-align: left;
+  margin-top: 1.4rem;
+  padding-right: 1rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 700px) {
+  .two__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .two__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 2rem;
+  }
+}
