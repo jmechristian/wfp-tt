@@ -30,6 +30,9 @@ const Layout = ({ children }) => {
               <Link href='/fourth'>4</Link>
             </div>
             <div className='nav__item'>
+              <Link href='/five'>5</Link>
+            </div>
+            <div className='nav__item'>
               <Link href='/stars'>Stars</Link>
             </div>
           </div>
