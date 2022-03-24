@@ -1,12 +1,17 @@
 import data from '../data';
-import One from '../components/One';
+import Five from '../components/Five';
 
 export default function Home() {
   const testimonials = data.testimonials;
   return (
-    <div className='one__wrapper'>
+    <div className='third__wrapper'>
       {testimonials.map((t, index) => (
-        <One key={index} author={t.author} content={t.content} />
+        <Five
+          key={index}
+          author={t.author}
+          content={t.content}
+          location={t.location}
+        />
       ))}
     </div>
   );
