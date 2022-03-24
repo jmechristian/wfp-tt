@@ -18,22 +18,16 @@ const Layout = ({ children }) => {
           </div>
           <div className='nav__menu'>
             <div className='nav__item'>
-              <Link href='/'>1</Link>
-            </div>
-            <div className='nav__item'>
-              <Link href='/second'>2</Link>
-            </div>
-            <div className='nav__item'>
-              <Link href='/third'>3</Link>
-            </div>
-            <div className='nav__item'>
-              <Link href='/fourth'>4</Link>
-            </div>
-            <div className='nav__item'>
               <Link href='/five'>5</Link>
             </div>
             <div className='nav__item'>
               <Link href='/stars'>Stars</Link>
+            </div>
+            <div className='nav__item'>
+              <Link href='/pic1'>P1</Link>
+            </div>
+            <div className='nav__item'>
+              <Link href='/pic2'>P2</Link>
             </div>
           </div>
         </div>

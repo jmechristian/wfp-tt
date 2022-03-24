@@ -1,0 +1,101 @@
+.picOne__wrapper {
+  display: grid;
+}
+
+.picOne__container {
+  margin-bottom: 3rem;
+}
+
+.picOne__inner {
+  padding: 3rem;
+  border: 1px solid $light-grey;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.picOne__content {
+  font-size: 2.2rem;
+  font-family: $main;
+  color: $primary;
+
+  span {
+    font-family: $italic;
+    color: $highlight;
+    font-size: 2.2rem;
+    letter-spacing: 0.3px;
+    font-style: italic;
+  }
+}
+
+.picOne {
+  display: inline-flex;
+}
+
+svg {
+  display: inline;
+}
+
+.full-star {
+  color: $highlight;
+  width: 30px;
+  height: 30px;
+}
+
+.picOne__authorBlock {
+  display: flex;
+  align-items: center;
+}
+
+.picOne__authDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.picOne__profilePic {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 12px;
+  border-radius: 10px;
+}
+
+.authDetails__name {
+  font-family: $body;
+  color: $light-grey;
+  font-size: 1.6rem;
+  margin-bottom: 2px;
+}
+
+.authDetails__location {
+  font-family: $bold;
+  font-size: 1.6rem;
+  color: $primary;
+}
+
+.ruler {
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid $light-grey;
+}
+
+@media screen and (min-width: 700px) {
+  .picOne__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .picOne__authDetails {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .picOne__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}

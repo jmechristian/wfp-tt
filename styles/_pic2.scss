@@ -1,0 +1,96 @@
+.picTwo__wrapper {
+  display: grid;
+}
+
+.picTwo__container {
+  margin-bottom: 3rem;
+}
+
+.picTwo__inner {
+  padding: 3rem;
+  border: 1px solid $light-grey;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.picTwo__content {
+  font-size: 2.2rem;
+  font-family: $main;
+  color: $primary;
+
+  span {
+    font-family: $italic;
+    color: $highlight;
+    font-size: 2.2rem;
+    letter-spacing: 0.3px;
+    font-style: italic;
+  }
+}
+
+.picTwo {
+  display: inline-flex;
+}
+
+svg {
+  display: inline;
+}
+
+.full-star {
+  color: $highlight;
+  width: 30px;
+  height: 30px;
+}
+
+.picTwo-author {
+  font-family: $italic;
+  font-size: 2rem;
+  color: $primary;
+  text-align: right;
+  margin-top: 1.2rem;
+  font-style: italic;
+  padding-right: 1.2rem;
+}
+
+.picTwo_profilePic {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.picTwo__authorBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.ruler {
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid $light-grey;
+}
+
+.picTwo-location {
+  font-family: $bold;
+  color: $primary;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 700px) {
+  .picTwo__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .picTwo__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
