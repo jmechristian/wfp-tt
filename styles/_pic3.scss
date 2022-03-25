@@ -1,0 +1,52 @@
+.pic3__container {
+  border: 1px solid $light-grey;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.pic3__bottom__inner {
+  padding: 4rem;
+}
+
+.pic3__ruler {
+  height: 1rem;
+  background-color: $highlight;
+}
+
+.pic3__top {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center;
+}
+
+.pic3__bottom__content {
+  font-size: clamp(1.8rem, 1.5rem + 0.8333vw, 2.2rem);
+  font-family: $main;
+  color: $primary;
+
+  span {
+    font-family: $italic;
+    font-size: clamp(1.8rem, 1.5rem + 0.8333vw, 2.2rem);
+    color: $highlight;
+    letter-spacing: 0.3px;
+    font-style: italic;
+  }
+}
+
+.pic3__bottom__author {
+  font-family: $main;
+  color: $primary;
+  font-size: clamp(1.8rem, 1.5rem + 0.8333vw, 2.2rem);
+  margin-bottom: 2px;
+}
+
+.pic3__bottom__location {
+  font-family: $bold;
+  color: $primary;
+  font-size: clamp(1.6rem, 1.3rem + 1.3333vw, 2rem);
+  margin-bottom: 2px;
+}
+
+.pic3__bottom__authorBlock {
+  margin-top: 2rem;
+}

@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
               <Link href='/pic1'>P1</Link>
             </div>
             <div className='nav__item'>
-              <Link href='/pic2'>P2</Link>
+              <Link href='/pic3'>P3</Link>
             </div>
           </div>
         </div>
